@@ -22,7 +22,7 @@ while True:
         print("No messsage received within timeout")
         continue
 
-    if type(message) is canio.RemoteTransmissionRequest:
+    if isinstance(message, canio.RemoteTransmissionRequest):
         if message.id == 0x201:
             # request for status of doormat
             transmitState = 0
@@ -30,7 +30,7 @@ while True:
                 transmitState = 1
                 message = canio.Message(id=0x201, data=struct.pack("<B", transmitState))
                 can.send(message)
-    elif type(message) is canio.Message:
+    elif isinstance(msg, canio.Message):
         if message.id == 0x202:
             # play LED animation
             data = message.data
