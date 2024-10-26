@@ -3,8 +3,9 @@
 Adafruit_MCP2515 mcp(A3);
 
 int lastButtonState;
+int buttonState;
 unsigned long lastDebounce;
-unsigned long debounceDelay = 50;
+unsigned long debounceDelay = 100;
 
 #define buttonPin 7
 
@@ -18,21 +19,24 @@ void setup() {
 	Serial.println("MCP2515 initialized");
 	pinMode(buttonPin, INPUT_PULLUP);
 	lastButtonState = digitalRead(buttonPin);
+	buttonState = lastButtonState;
 }
 
 void loop() {
-	int buttonState = digitalRead(buttonPin);
+	int buttonReading = digitalRead(buttonPin);
 
-	if (buttonState != lastButtonState)
+	if (buttonReading != lastButtonState)
 	{
 		lastDebounce = millis();
+		Serial.printf("starting debounce\n");
 	}
 
 	if ((millis() - lastDebounce) > debounceDelay)
 	{
-		if (lastButtonState != buttonState)
+		if (buttonState != buttonReading)
 		{
-			lastButtonState = buttonState;
+			Serial.printf("In debounce 2\n");
+			buttonState = buttonReading;
 			mcp.beginPacket(0x200);
 			mcp.write(buttonState ? 0 : 1);
 			if (mcp.endPacket()) 
@@ -45,4 +49,5 @@ void loop() {
 			}
 		}
 	}
+	lastButtonState = buttonReading;
 }
