@@ -24,8 +24,10 @@ while True:
         print("No messsage received within timeout")
         continue
 
+    #message can be a Message or a RemoteTransmissionRequest, figure out which
     if isinstance(msg, canio.Message):
         data = message.data
+        #message with ID 0x200 is a button state, process it
         if message.id == 0x200:
             if len(data) != 1:
                 print(f"Unusual message length for 0x200 {len(data)}")
@@ -35,6 +37,7 @@ while True:
                 print("Button pushed")
                 request = canio.RemoteTransmissionRequest(id=0x201)
                 can.send(request)
+         #message with ID 0x201 is a doormat state, process it
          elif message.id == 0x201:
             if len(data) != 1:
                 print(f"Unusual message length for 0x201 {len(data)}")
