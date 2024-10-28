@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="34.281979mm"
+   height="75.601929mm"
+   viewBox="0 0 34.281979 75.601929"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="doorbell-diagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.5494714"
+     inkscape:cx="-127.78551"
+     inkscape:cy="218.1389"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-7.7807655,-47.51123)">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.540208;stroke-dasharray:none"
+       id="rect7"
+       width="34.281979"
+       height="75.601929"
+       x="7.7807655"
+       y="47.51123" />
+    <g
+       id="g7">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.102411"
+         id="rect1"
+         width="25.553978"
+         height="18.678167"
+         x="12.144766"
+         y="65.001122" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.1"
+         x="24.84873"
+         y="69.541191"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           x="24.84873"
+           y="69.541191"
+           style="text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.1">CAN Transceiver</tspan><tspan
+           sodipodi:role="line"
+           x="24.84873"
+           y="73.509941"
+           style="text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.1"
+           id="tspan4">+ controller</tspan><tspan
+           sodipodi:role="line"
+           x="24.84873"
+           y="77.478691"
+           style="text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.1"
+           id="tspan5">MCP25625</tspan><tspan
+           sodipodi:role="line"
+           x="24.84873"
+           y="81.447441"
+           style="text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.1"
+           id="tspan7">CAN BFF</tspan></text>
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.0777859"
+         id="rect2"
+         width="25.578604"
+         height="10.765301"
+         x="12.132453"
+         y="90.179504" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.1"
+         x="24.985256"
+         y="94.34613"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           x="24.985256"
+           y="94.34613"
+           style="text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.1">SAMD21 MCU</tspan><tspan
+           sodipodi:role="line"
+           x="24.985256"
+           y="98.31488"
+           style="text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.1"
+           id="tspan6">QT Py</tspan></text>
+      <g
+         id="g3"
+         transform="translate(-2.5764139,40.266127)">
+        <rect
+           style="fill:#ffffff;stroke:#000000;stroke-width:0.0777859"
+           id="rect3"
+           width="25.578604"
+           height="10.765301"
+           x="14.708867"
+           y="67.166565" />
+        <text
+           xml:space="preserve"
+           style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.1"
+           x="22.372133"
+           y="73.703331"
+           id="text3"><tspan
+             sodipodi:role="line"
+             id="tspan3"
+             x="22.372133"
+             y="73.703331"
+             style="fill:#000000;stroke:none;stroke-width:0.1">Button</tspan></text>
+      </g>
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.1"
+         d="m 24.921755,100.9448 v 6.48793"
+         id="path6" />
+      <path
+         style="fill:#008000;stroke:#008000;stroke-width:0.498757;stroke-dasharray:none"
+         d="m 31.044812,64.887506 v -12.5"
+         id="path41" />
+      <path
+         style="fill:#008000;stroke:#ffcc00;stroke-width:0.5;stroke-dasharray:none"
+         d="m 19.089077,64.887506 v -12.5"
+         id="path42" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.0997001"
+         d="m 24.921755,83.730494 v 6.44901"
+         id="path5" />
+    </g>
+  </g>
+</svg>
